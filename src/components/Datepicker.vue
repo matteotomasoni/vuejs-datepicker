@@ -866,7 +866,7 @@ export default {
 
 <style lang="stylus">
 
-$width = 300px
+$width = 100%
 $main-color = #212529
 $selected-color = #7D899E
 
