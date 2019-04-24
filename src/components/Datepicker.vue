@@ -1,6 +1,6 @@
 <template>
   <div class="vdp-datepicker" :class="[wrapperClass, isRtl ? 'rtl' : '']">
-    <div :class="{'input-group' : bootstrapStyling}">
+    <div :class="Object.assign({}, {'input-group' : bootstrapStyling}, inputGroupClass)">
       <!-- Calendar Button -->
       <span v-if="calendarButton" class="vdp-datepicker__calendar-button" :class="{'input-group-prepend' : bootstrapStyling}" @click="showCalendar" v-bind:style="{'cursor:not-allowed;' : disabledPicker}">
         <span :class="{'btn btn-outline-Grey' : bootstrapStyling}">
@@ -143,6 +143,7 @@ export default {
     inline: Boolean,
     calendarClass: [String, Object],
     inputClass: [String, Object],
+    inputGroupClass: [String, Object],
     wrapperClass: [String, Object],
     mondayFirst: Boolean,
     clearButton: Boolean,
