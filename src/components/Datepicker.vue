@@ -868,7 +868,7 @@ export default {
 
 $width = 300px
 $main-color = #212529
-$selected-color = #007EDB
+$selected-color = #7D899E
 
 .rtl
     direction:rtl
