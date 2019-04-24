@@ -967,7 +967,8 @@ $selected-color = #7D899E
 
         &.day-header
             font-size 75%
-            white-space no-wrap
+            white-space nowrap
+            overflow hidden
             cursor inherit
             &:hover
                 background inherit
