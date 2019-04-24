@@ -983,4 +983,8 @@ $selected-color = #007EDB
     &.disabled
       color #999
       cursor default
+
+.form-control:disabled, .form-control[readonly]
+    background #fff
+
 </style>
