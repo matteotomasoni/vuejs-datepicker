@@ -867,6 +867,8 @@ export default {
 <style lang="stylus">
 
 $width = 300px
+$main-color = #212529
+$selected-color = #007EDB
 
 .rtl
     direction:rtl
@@ -907,13 +909,13 @@ $width = 300px
 
         .prev
             &:after
-                border-right 10px solid #000
+                border-right 10px solid $main-color
                 margin-left -5px
             &.disabled:after
                 border-right 10px solid #ddd
         .next
             &:after
-                border-left 10px solid #000
+                border-left 10px solid $main-color
                 margin-left 5px
             &.disabled:after
                 border-left 10px solid #ddd
@@ -947,13 +949,13 @@ $width = 300px
         &:not(.blank):not(.disabled).year
             cursor pointer
             &:hover
-                border 1px solid #4bd
+                border 1px solid $selected-color
         &.selected
-            background #4bd
+            background $selected-color
             &:hover
-                background #4bd
+                background $selected-color
             &.highlighted
-                background #4bd
+                background $selected-color
         &.highlighted
             background #cae5ed
         &.grey
